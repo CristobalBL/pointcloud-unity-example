@@ -1,6 +1,18 @@
 # pointcloud-unity-example
 This example project show how create a simple point cloud with Unity (Windows and Android)
 
+Android Camera Control from Simple Touch Camera Script Asset: 
+
+https://assetstore.unity.com/packages/tools/camera/simple-touch-camera-script-14489
+
+Point Cloud Shader from: 
+
+http://www.kamend.com/2014/05/rendering-a-point-cloud-inside-unity/
+
+How create Unity Project into Unity: 
+
+https://www.youtube.com/watch?v=qpXxcvS-g3g
+
 ## Output example
 
 Results from Unity Editor
