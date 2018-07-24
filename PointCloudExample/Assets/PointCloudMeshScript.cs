@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Point cloud mesh script.
+/// Create random points and put it in a Mesh with Point Topology. The color depend of the vertical (Y) position of the point. 
+/// </summary>
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
 public class PointCloudMeshScript : MonoBehaviour {
 

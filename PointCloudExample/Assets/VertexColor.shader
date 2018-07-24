@@ -1,5 +1,4 @@
 ﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
 Shader "Custom/VertexColor" {
 	Properties {
 		_PointSize("PointSize", Float) = 5

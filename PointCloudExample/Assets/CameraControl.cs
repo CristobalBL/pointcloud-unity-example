@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Camera control.
+/// Control Camera with different behaviour for Android and Unity Editor. 
+/// </summary>
 public class CameraControl : MonoBehaviour {
 
 

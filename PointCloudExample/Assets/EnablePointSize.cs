@@ -6,7 +6,11 @@ using UnityEngine;
 using System;
 using System.Collections;
 using System.Runtime.InteropServices;
- 
+
+/// <summary>
+/// Enable point size.
+/// This script allows you to modify the size of the points within the shader.
+/// </summary>
 public class EnablePointSize : MonoBehaviour 
 {
     const UInt32 GL_VERTEX_PROGRAM_POINT_SIZE = 0x8642;
