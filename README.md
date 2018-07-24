@@ -2,7 +2,8 @@
 This example project show how create a simple point cloud with Unity (Windows and Android)
 
 ## Output example
-Original image // local normalization // local equalization
+
+Results from Unity Editor
 
 ![alt text](https://github.com/CristobalBL/pointcloud-unity-example/blob/master/out.png)
 
