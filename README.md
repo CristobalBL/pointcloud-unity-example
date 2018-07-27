@@ -1,6 +1,13 @@
 # pointcloud-unity-example
-This example project show how create a simple point cloud with Unity (Windows and Android)
+This example projects show how create (PointCloudExample) and load (PointCloudModelVisualizer) a point cloud with Unity (Windows and Android).
 
+## Point Cloud Example
+Create a cube type mesh and render it using a point cloud shader.
+
+## Point Cloud Model Visualizer
+Using a script to read .obj files, an object model is loaded and rendered with the point cloud shader.
+
+## Resources used
 Android Camera Control from Simple Touch Camera Script Asset: 
 
 https://assetstore.unity.com/packages/tools/camera/simple-touch-camera-script-14489
@@ -8,6 +15,14 @@ https://assetstore.unity.com/packages/tools/camera/simple-touch-camera-script-14
 Point Cloud Shader from: 
 
 http://www.kamend.com/2014/05/rendering-a-point-cloud-inside-unity/
+
+Simple File Browser:
+
+https://assetstore.unity.com/packages/tools/input-management/simple-file-browser-98451
+
+Object (.obj) Loader (I made some modifications): 
+
+https://assetstore.unity.com/packages/tools/modeling/runtime-obj-importer-49547
 
 How create Unity Project into Unity: 
 
