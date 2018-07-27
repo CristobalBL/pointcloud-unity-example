@@ -24,7 +24,7 @@ Object (.obj) Loader (I made some modifications):
 
 https://assetstore.unity.com/packages/tools/modeling/runtime-obj-importer-49547
 
-How create Unity Project into Unity: 
+How create Unity Project into GitHub: 
 
 https://www.youtube.com/watch?v=qpXxcvS-g3g
 
