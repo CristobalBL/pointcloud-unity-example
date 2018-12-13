@@ -118,6 +118,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 514979537}
+  - component: {fileID: 514979539}
   - component: {fileID: 514979538}
   m_Layer: 0
   m_Name: ControlPCVisualizer
@@ -145,14 +146,29 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 514979536}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85eeacb9d907072408e0fad36a60afe2, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a5c09da6f21d534599b6af14817f238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FileBrowserPrefab: {fileID: 1760643962491650, guid: 4599b5ba3543545db92bb18160cea721,
+  matVertex: {fileID: 2100000, guid: d065a71536020734d8550620fc238b5a, type: 2}
+  scale: 1
+  invertYZ: 0
+  numPoints: 0
+  numPointGroups: 0
+--- !u!114 &514979539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 514979536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c425737a7f8d73046b632869c38e3aa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fileBrowserPrefab: {fileID: 1760643962491650, guid: 4599b5ba3543545db92bb18160cea721,
     type: 2}
-  camera: {fileID: 1672004176}
   FileExtensions:
   - obj
 --- !u!1 &801665334
@@ -489,3 +505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 25
+  minFov: 15
+  maxFov: 100
+  speedH: 2
+  speedV: 2

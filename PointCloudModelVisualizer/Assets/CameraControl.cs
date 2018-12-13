@@ -9,11 +9,12 @@ using UnityEngine;
 public class CameraControl : MonoBehaviour {
 
 
-	#if UNITY_ANDROID && !UNITY_EDITOR 
+
+#if UNITY_ANDROID && !UNITY_EDITOR
 	Vector2?[] oldTouchPositions = { null, null };
 	Vector2 oldTouchVector;
 	float oldTouchDistance;
-	private Camera camera;
+	
 
 	void Start(){
 		camera = Camera.main;
@@ -21,14 +22,26 @@ public class CameraControl : MonoBehaviour {
 			camera.orthographic = true;
 		}
 	}
-	#endif
+#endif
 
-	#if UNITY_EDITOR
-	public int speed = 50;
-	#endif
+#if UNITY_EDITOR
 
-	void Update() {
-		#if UNITY_ANDROID && !UNITY_EDITOR 
+    public int speed = 50;
+
+    public float minFov = 15f;
+    public float maxFov = 90f;
+    float sensitivity = 10f;
+
+    public float speedH = 2.0f;
+    public float speedV = 2.0f;
+
+    private float yaw = 0.0f;
+    private float pitch = 0.0f;
+
+#endif
+
+    void Update() {
+#if UNITY_ANDROID && !UNITY_EDITOR
 		if (Input.touchCount == 0) {
 			oldTouchPositions[0] = null;
 			oldTouchPositions[1] = null;
@@ -74,10 +87,25 @@ public class CameraControl : MonoBehaviour {
 				oldTouchDistance = newTouchDistance;
 			}
 		}
-		#endif
+#endif
 
-		#if UNITY_EDITOR
-		if(Input.GetKey(KeyCode.D))
+#if UNITY_EDITOR
+
+        // Set Camera Zoom
+        float fov = Camera.main.fieldOfView;
+        fov += Input.GetAxis("Mouse ScrollWheel") * sensitivity;
+        fov = Mathf.Clamp(fov, minFov, maxFov);
+        Camera.main.fieldOfView = fov;
+
+        // Rotate camera
+        yaw += speedH * Input.GetAxis("Mouse X");
+        pitch -= speedV * Input.GetAxis("Mouse Y");
+
+        transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
+
+
+        // Move camera
+        if (Input.GetKey(KeyCode.D))
 		{
 			transform.Translate(new Vector3(speed * Time.deltaTime,0,0));
 		}
@@ -93,11 +121,11 @@ public class CameraControl : MonoBehaviour {
 		{
 			transform.Translate(new Vector3(0,speed * Time.deltaTime,0));
 		}
-		if(Input.GetKey(KeyCode.LeftAlt))
+		if(Input.GetKey(KeyCode.Q))
 		{
 			transform.Translate(new Vector3(0,0,-speed * Time.deltaTime));
 		}
-		if(Input.GetKey(KeyCode.LeftControl))
+		if(Input.GetKey(KeyCode.E))
 		{
 			transform.Translate(new Vector3(0,0,speed * Time.deltaTime));
 		}
