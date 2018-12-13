@@ -33,9 +33,6 @@ How create Unity Project into GitHub:
 
 https://www.youtube.com/watch?v=qpXxcvS-g3g
 
-## Point Cloud input example (for point cloud model visualizer)
-
-
 ## Output example
 
 Results from Unity Editor
