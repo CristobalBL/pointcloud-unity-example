@@ -7,6 +7,15 @@ Create a cube type mesh and render it using a point cloud shader.
 ## Point Cloud Model Visualizer
 Using a script to read .obj files, an object model is loaded and rendered with the point cloud shader.
 
+The .obj files must have the following vertex structure:
+
+....
+v v0 v1 v2 c0 c1 c2 ...
+....
+
+ci : color
+vi : vertex coordinate i
+
 ## Resources used
 Android Camera Control from Simple Touch Camera Script Asset: 
 
@@ -20,13 +29,12 @@ Simple File Browser:
 
 https://assetstore.unity.com/packages/tools/input-management/simple-file-browser-98451
 
-Object (.obj) Loader (I made some modifications): 
-
-https://assetstore.unity.com/packages/tools/modeling/runtime-obj-importer-49547
-
 How create Unity Project into GitHub: 
 
 https://www.youtube.com/watch?v=qpXxcvS-g3g
+
+## Point Cloud input example (for point cloud model visualizer)
+
 
 ## Output example
 
