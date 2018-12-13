@@ -32,9 +32,9 @@ https://www.youtube.com/watch?v=qpXxcvS-g3g
 
 Results from Unity Editor
 
-![alt text](https://github.com/CristobalBL/pointcloud-unity-example/blob/master/out_1.png)
+<img src=https://github.com/CristobalBL/pointcloud-unity-example/blob/master/out_1.png width=400 />
 
-![alt text](https://github.com/CristobalBL/pointcloud-unity-example/blob/master/out_2.png)
+<img src=https://github.com/CristobalBL/pointcloud-unity-example/blob/master/out_2.png width=400 />
 
 **Built With**
 
